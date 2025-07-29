@@ -173,7 +173,7 @@ function addPlaneBody(){
 
 
 function addPlane(){
-  const texture = new THREE.TextureLoader().load( "src/assets/plane.png" );
+  const texture = new THREE.TextureLoader().load( "plane.png" );
 
   let geometry =  new THREE.BoxGeometry(20, 0, 200);
   let material = new THREE.MeshBasicMaterial({map: texture});
@@ -199,7 +199,7 @@ function addObstacleBody(){
 function addObstacle(){
  
   let geometry = new THREE.BoxGeometry(2,2,2);
-  const texture = new THREE.TextureLoader().load( "src/assets/obstacle.png" );
+  const texture = new THREE.TextureLoader().load( "obstacle.png" );
 
   let material = new THREE.MeshBasicMaterial({ map: texture});
 
