@@ -242,7 +242,7 @@ function movePlayer(){
   // if(keyboard[87]) cubeThree.position.z -= 0.1
   // if(keyboard[87]) cubeThree.translateZ(-0.1);
 
-  const strengthWS = 500;
+  const strengthWS = 1000;
   const forceForward = new CANNON.Vec3(0, 0, strengthWS)
   if(keyboard[87]) cubeBody.applyLocalForce(forceForward);
 
@@ -254,7 +254,7 @@ function movePlayer(){
   // if(keyboard[65]) cube.rotation.y += 0.01;
   // if(keyboard[65]) cube.rotateY(0.01);
 
-  const strengthAD = 200;
+  const strengthAD = 400;
   const forceLeft= new CANNON.Vec3(0, strengthAD, 0)
   if(keyboard[65]) cubeBody.applyTorque(forceLeft);
 
